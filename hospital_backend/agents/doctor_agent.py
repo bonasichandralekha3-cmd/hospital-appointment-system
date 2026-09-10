@@ -1,4 +1,4 @@
-from database import doctors
+from hospital_backend.database import doctors
 
 
 def get_doctor_info():
