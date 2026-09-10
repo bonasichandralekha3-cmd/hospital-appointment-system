@@ -1,4 +1,4 @@
-from database import appointments
+from hospital_backend.database import appointments
 
 
 def get_appointments():
