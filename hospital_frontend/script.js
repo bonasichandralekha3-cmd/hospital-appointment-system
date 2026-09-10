@@ -46,7 +46,7 @@ async function bookAppointment(doctorName, patientName) {
 
     try {
         const response = await fetch(
-            `https://hospital-appointment-system-44cr-jhei4iy4u-brain-bytes6.vercel.app/appointment?patient_name=${encodeURIComponent(patientName)}&doctor_name=${encodeURIComponent(doctorName)}&date=${encodeURIComponent(date)}&time=${encodeURIComponent(time)}`,
+            `https://hospital-appointment-system-44cr.vercel.app/appointment?patient_name=${encodeURIComponent(patientName)}&doctor_name=${encodeURIComponent(doctorName)}&date=${encodeURIComponent(date)}&time=${encodeURIComponent(time)}`,
             {
                 method: "POST"
             }
@@ -63,7 +63,7 @@ async function bookAppointment(doctorName, patientName) {
 }
 async function loadAppointments() {
     try {
-        const response = await fetch("https://hospital-appointment-system-44cr-jhei4iy4u-brain-bytes6.vercel.app/appointment");
+        const response = await fetch("https://hospital-appointment-system-44cr.vercel.app/appointment");
         const appointments = await response.json();
 
         const container = document.getElementById("appointments");
@@ -90,7 +90,7 @@ async function loadAppointments() {
 loadAppointments();
 async function loadDashboard() {
     try {
-        const response = await fetch("https://hospital-appointment-system-44cr-jhei4iy4u-brain-bytes6.vercel.app/dashboard");
+        const response = await fetch("https://hospital-appointment-system-44cr.vercel.app/dashboard");
         const data = await response.json();
 
         document.getElementById("totalPatients").textContent = data.total_patients;
@@ -112,7 +112,7 @@ document.getElementById("checkPriority").addEventListener("click", async functio
     }
 
     const response = await fetch(
-        `https://hospital-appointment-system-44cr-jhei4iy4u-brain-bytes6.vercel.app/priority?priority=${encodeURIComponent(priority)}`
+        `https://hospital-appointment-system-44cr.vercel.app/priority?priority=${encodeURIComponent(priority)}`
     );
 
     const result = await response.json();
@@ -129,7 +129,7 @@ document.getElementById("checkEmergency").addEventListener("click", async () => 
     }
 
     const response = await fetch(
-        `https://hospital-appointment-system-44cr-jhei4iy4u-brain-bytes6.vercel.app/emergency/${encodeURIComponent(patientName)}`
+        `https://hospital-appointment-system-44cr.vercel.app/emergency/${encodeURIComponent(patientName)}`
     );
 
     const result = await response.json();
@@ -147,7 +147,7 @@ async function sendNotification() {
 
     try {
         const response = await fetch(
-            `https://hospital-appointment-system-44cr-jhei4iy4u-brain-bytes6.vercel.app/notification?message=${encodeURIComponent(message)}`
+            `https://hospital-appointment-system-44cr.vercel.app/notification?message=${encodeURIComponent(message)}`
         );
 
         const result = await response.json();
@@ -163,7 +163,7 @@ async function sendNotification() {
 document.getElementById("sendNotification").addEventListener("click", sendNotification);
 async function loadDashboard() {
     try {
-        const response = await fetch("https://hospital-appointment-system-44cr-jhei4iy4u-brain-bytes6.vercel.app/dashboard");
+        const response = await fetch("https://hospital-appointment-system-44cr.vercel.app/dashboard");
         const data = await response.json();
 
         document.getElementById("totalPatients").textContent = data.total_patients;
