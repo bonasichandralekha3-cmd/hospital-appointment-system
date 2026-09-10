@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from database import patients,doctors,appointments
+from hospital_backend.database import patients, doctors, appointments
 
 from agents.patient_agent import get_patient_info, add_patient
 from agents.doctor_agent import get_doctor_info, add_doctor
