@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hospital Appointment Coordination</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🏥 Hospital Appointment Coordination</h1>
+        <p>AI-powered appointment scheduling system</p>
+    </header>
+
+    <main>
+
+        <main>
+
+    <!-- PASTE DASHBOARD CODE HERE -->
+
+    <section class="welcome">
+        <section class="dashboard">
+    <h2>🏥 Hospital Dashboard</h2>
+
+    <div class="dashboard-cards">
+        <div class="dashboard-card">
+            <h3>Total Patients</h3>
+            <span id="totalPatients">0</span>
+        </div>
+
+        <div class="dashboard-card">
+            <h3>Available Doctors</h3>
+            <span id="availableDoctors">0</span>
+        </div>
+
+        <div class="dashboard-card">
+            <h3>Total Appointments</h3>
+            <span id="totalAppointments">0</span>
+        </div>
+
+        <div class="dashboard-card">
+            <h3>Priority Requests</h3>
+            <span id="priorityRequests">0</span>
+        </div>
+    </div>
+</section>
+
+        <section class="welcome">
+            <h2>Welcome 👋</h2>
+            <p>How can we help you today?</p>
+        </section>
+
+        <section class="appointment-box">
+
+            <h2>📅 Request an Appointment</h2>
+
+            <label for="patientName">Patient Name</label>
+            <input
+                type="text"
+                id="patientName"
+                placeholder="Enter patient name"
+            >
+
+            <label for="request">Appointment Request</label>
+            <textarea
+                id="request"
+                placeholder="Example: I need a cardiologist appointment this week"
+            ></textarea>
+
+            <button id="findAppointment">
+                Find Appointment
+            </button>
+
+        </section>
+        <section class="appointments-box">
+    <h2>📅 Booked Appointments</h2>
+    <div id="appointments">
+        Loading appointments...
+    </div>
+</section>
+
+        <section class="result-box">
+
+            <h2>🔎 Available Appointment</h2>
+
+            <div id="result">
+                <p>Your available appointment will appear here.</p>
+            </div>
+
+        </section>
+
+        <section class="priority-box">
+    <h2>🚨 Priority Check</h2>
+
+    <input type="text" id="priorityInput" placeholder="Enter priority (high/normal)">
+
+    <button id="checkPriority">Check Priority</button>
+
+    <div id="priorityResult"></div>
+</section>
+<section class="emergency-box">
+    <h2>🚨 Emergency Check</h2>
+
+    <input type="text" id="emergencyPatient" placeholder="Enter patient name">
+
+    <button id="checkEmergency">Check Emergency</button>
+
+    <div id="emergencyResult"></div>
+</section>
+
+</main>
+
+    </main>
+    <section class="notification-box">
+    <h2>🔔 Send Notification</h2>
+
+    <input type="text" id="notificationMessage"
+           placeholder="Enter notification message">
+
+    <button id="sendNotification">Send Notification</button>
+
+    <div id="notificationResult"></div>
+</section>
+
+    <footer>
+        <p>Hospital Appointment Coordination Agent</p>
+        <p>Administrative scheduling system — not a medical diagnosis system.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
