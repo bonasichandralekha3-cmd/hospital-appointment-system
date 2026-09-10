@@ -3,12 +3,12 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from hospital_backend.database import patients, doctors, appointments
 
-from agents.patient_agent import get_patient_info, add_patient
-from agents.doctor_agent import get_doctor_info, add_doctor
-from agents.scheduling_agent import get_appointments, add_appointment 
-from agents.emergency_agent import check_emergency
-from agents.notification_agent import send_notification
-from agents.priority_agent import check_priority
+from hospital_backend.agents.patient_agent import get_patient_info, add_patient
+from hospital_backend.agents.doctor_agent import get_doctor_info, add_doctor
+from hospital_backend.agents.scheduling_agent import get_appointments, add_appointment
+from hospital_backend.agents.emergency_agent import check_emergency
+from hospital_backend.agents.notification_agent import send_notification
+from hospital_backend.agents.priority_agent import check_priority
 
 app = FastAPI()
 
