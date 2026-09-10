@@ -1,2 +1,12 @@
+[project]
+name = "hospital-appointment-system"
+version = "0.1.0"
+description = "Hospital Appointment System"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi",
+    "uvicorn"
+]
+
 [tool.vercel]
 entrypoint = "hospital_backend.main:app"
