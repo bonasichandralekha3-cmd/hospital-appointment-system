@@ -1,4 +1,4 @@
-from database import patients
+from hospital_backend.database import patients
 
 
 def check_emergency(patient_name):
