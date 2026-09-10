@@ -14,7 +14,7 @@ button.addEventListener("click", async function () {
     result.innerHTML = "<p>Searching for appointment...</p>";
 
     try {
-        const response = await fetch("https://hospital-appointment-system-44cr-jhei4iy4u-brain-bytes6.vercel.app/doctor");
+        const response = await fetch("https://hospital-appointment-system-44cr.vercel.app/appointments");
 
         const doctors = await response.json();
 
