@@ -1,4 +1,4 @@
-const API_URL = "https://hospital-appointment-backend.vercel.app";
+const API_URL = "https://hospital-appointment-backend-beta.vercel.app";
 
 
 // ==========================================
